@@ -5,8 +5,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class Controller {
-    @GetMapping("/")//
+    @GetMapping("/hello")//
     public String hello() {
         return "Hello Spring Boot";
+    }
+    @GetMapping("/hi")//
+    public String hi() {
+        return "Hi Spring Boot";
     }
 }
